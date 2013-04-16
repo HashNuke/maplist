@@ -4,7 +4,7 @@
     %title Maplist demo
     %script{src: "assets/jquery.min.js"}
     %script{src: "../dist/maplist.js"}
-    %script{src:"https://maps.googleapis.com/maps/api/js?key=YOUR_MAPS_API_KEY&sensor=false"}
+    %script{src:"https://maps.googleapis.com/maps/api/js?key=#{ENV['API_KEY'] || "YOUR_MAPS_API_KEY"}&sensor=false"}
 
     :css
       .map {
